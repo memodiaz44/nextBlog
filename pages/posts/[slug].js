@@ -5,6 +5,7 @@ import { Comment } from '../../components/Comment';
 import Footer from '../../components/Footer'
 import { Sidebar } from '../../components/Sidebar';
 import { formatDate } from '../../components/Comment';
+import 'tailwindcss/tailwind.css'
 
 
 import dotenv from 'dotenv';
