@@ -1,3 +1,6 @@
+import 'tailwindcss/tailwind.css'
+
+
 export default function Footer () {
 return(
     <footer className="bg-white rounded-lg shadow m-4 dark:bg-gray-800">

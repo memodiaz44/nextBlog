@@ -1,6 +1,8 @@
 import { getCategories } from '../functions/graphqlUtils'
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import 'tailwindcss/tailwind.css'
+
 
 
 export const Sidebar = () => {

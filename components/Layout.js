@@ -8,6 +8,8 @@ import { MyDropdown } from './MyLink.js';
 import { toggleMobileMenu } from '../functions/toggle.js';
 import Image from 'next/image';
 import Logo from '../images/LogenO.png'
+import 'tailwindcss/tailwind.css'
+
 
 
 
