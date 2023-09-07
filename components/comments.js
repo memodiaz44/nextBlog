@@ -5,6 +5,7 @@ import axios from 'axios'
 
 
 
+
 export function AddComment({post}) {
     const [comment, setComment ] = useState('');
     const [name, setName] = useState('')
@@ -57,7 +58,7 @@ export function AddComment({post}) {
 
 return(
     <div>
-    <form className="mb-8 ml-40 mr-40 bg-gray-50" onSubmit={addedComment}>
+    <form className="mb-8 ml-4 mr-4 bg-gray-50" onSubmit={addedComment}>
       <div className="block p-2 text-sm text-gray-900 border border-gray-200 rounded-lg dark:text-white dark:bg-gray-800 focus:ring focus:ring-opacity-40 focus:outline-none">
         <div className="mb-2">
           <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">

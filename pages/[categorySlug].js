@@ -3,8 +3,9 @@ import Layout from '../components/Layout';
 import { GraphQLClient, gql } from 'graphql-request';
 import BlogPosts from '../components/BlogCard';
 import Footer from '../components/Footer';
-import { Paginate } from '../components/Pagination';
 import { useState } from 'react';
+import 'tailwindcss/tailwind.css'
+
 
 import dotenv from 'dotenv';
 dotenv.config();

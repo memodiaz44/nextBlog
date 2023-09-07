@@ -1,5 +1,6 @@
 import Link from "next/link"; // Import the Link component
 import { formatDate } from "./Comment";
+import 'tailwindcss/tailwind.css'
 
 
 export default function BlogPosts

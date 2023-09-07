@@ -93,9 +93,9 @@ export default function BlogPost({post, categories}){
     src={post.coverPic.url}
     alt=""
     style={{
-      width: '400px',
-      height: '200px',
-      margin: '50px'
+      width: '60%',
+      height: '400px',
+      margin: '20px'
     }}
   />
 )}
@@ -108,7 +108,7 @@ export default function BlogPost({post, categories}){
           
 
           
-          <div className='m-5 ml-2 '>
+          <div className='m-5 ml-1 '>
           <Sidebar categories={categories} />
           </div>
           
@@ -123,12 +123,23 @@ export default function BlogPost({post, categories}){
             borderRadius: '50%'
           }} />
         <h3>Created by {post.author.name}</h3>
-        <p className='pl-0'>At {formatDate(post.publishedAt)}</p>
+        <p className='pl-0 text-sm'>At {formatDate(post.publishedAt)}</p>
       </div>
-      <h2 className='ml-20 pl-20 '>Leave a comment</h2>
+      <h2 className='ml-10 pl-10 '>Leave a comment</h2>
+<div className=''>
         <CreatedComment post={post}/>
-        <Comment post={post}/>
+        </div>
+        {post.comments && post.comments.length > 0 ? (
+       
+        <>
+          <h2 className='ml-10'>Comments</h2>
+          <Comment post={post} />
+        </>
+      ) : ( 
+        <h2 className='ml-10'>(0) Comments</h2>
+    )}
 
+  
         </Layout>
          <footer>
          <Footer/>

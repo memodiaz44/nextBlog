@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import 'tailwindcss/tailwind.css'
+
 
 export function Search({ posts, onSearch }) {
   const [searchText, setSearchText] = useState('');

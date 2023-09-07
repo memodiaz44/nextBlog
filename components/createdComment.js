@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { AddComment } from "./comments";
 import { Comment } from "./Comment";
+import 'tailwindcss/tailwind.css'
+
 
 export function CreatedComment ({post}){
     const [comments, setComments] = useState([]);

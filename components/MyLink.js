@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Menu } from '@headlessui/react';
 import { useRouter } from 'next/router'; // Import the useRouter hook
+import 'tailwindcss/tailwind.css'
+
 
 
 export function MyDropdown({ categories, mobileMenuOpen }) {

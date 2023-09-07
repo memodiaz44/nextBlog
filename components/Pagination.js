@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import _ from 'lodash'
+import 'tailwindcss/tailwind.css'
+
 
 
 export function Paginate({ posts, pageSize, currentPAge, onPageChange }) {

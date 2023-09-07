@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { paginate } from '../components/paginate';
 import Footer from '../components/Footer';
 
+
 import dotenv from 'dotenv';
 dotenv.config();
 

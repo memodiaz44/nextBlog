@@ -33,11 +33,11 @@ export function Comment({ post }) {
       {comments.map((comment) => (
         <div
           key={comment.createdAt}
-          className={`bg-slate-200 border-b shadow-lg rounded-lg border-gray-100 mb-2  ml-40 mr-40 `}
+          className={`bg-slate-200 border-b shadow-lg rounded-lg border-gray-100 mb-2 ml-4 mr-4 `}
         >
           <div className="flex justify-between items-center">
-            <h3 className="text-black ml-2">{toUpper(comment.name)}</h3>
-            <p className="text-gray-500 px-40">{formatDate(comment.createdAt)}</p>
+            <h3 className="text-black ">{toUpper(comment.name)}</h3>
+            <p className="text-gray-500 px-4">{formatDate(comment.createdAt)}</p>
           </div>
           <p className="text-gray-900 dark:text-gray-800">{comment.comment}</p>
         </div>
