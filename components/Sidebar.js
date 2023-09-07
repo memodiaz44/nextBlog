@@ -26,11 +26,11 @@ export const Sidebar = () => {
 
         {categories.map(category => (
             <Link 
-            className='no-underline'
+            className='	'
             href={`/${category.slug}` } 
             key={category.slug}>
                     <div>
-                        <h3 className='' >{category.name}</h3>
+                        <h3 className='text-blue-600	hover:text-blue-300	' >{category.name}</h3>
                     </div>
                
             </Link>
